@@ -14,6 +14,8 @@ object RemoteDatabase {
 
     @Provides
     @Singleton
-    fun provideAlbumDAO(): RemoteAlbumDao = Retrofit.getClient().create(
-        RemoteAlbumDao::class.java)
+    fun provideAlbumDAO(): RemoteAlbumDao =
+        Retrofit
+            .getClient()
+            .create(RemoteAlbumDao::class.java)
 }
