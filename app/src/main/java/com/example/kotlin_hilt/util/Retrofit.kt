@@ -50,7 +50,7 @@ object Retrofit {
             )
             else -> Log.e(
                 this::class.java.simpleName,
-                "Unknown error happened in Retrogit | cause ${this.cause} | message: ${this.message}"
+                "Unknown error happened in Retrofit | cause ${this.cause} | message: ${this.message}"
             )
         }
     }
